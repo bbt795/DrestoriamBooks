@@ -1,30 +1,30 @@
 package com.mordonia.mordbooks.commands;
 
-import com.mordonia.mcore.MCore;
 import com.mordonia.mcore.MCoreAPI;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
-import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Commands implements CommandExecutor {
+
     private MCoreAPI mCoreAPI;
     private List<String> theme;
+
     public Commands(MCoreAPI mCoreAPI){
         this.mCoreAPI = mCoreAPI;
     }
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+
         if(command.getName().equalsIgnoreCase("mb")){
             Player player = (Player) sender;
             if(args.length < 1){
