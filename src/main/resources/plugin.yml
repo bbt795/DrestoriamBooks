@@ -2,7 +2,7 @@ name: MordBooks
 version: ${project.version}
 main: com.mordonia.mordbooks.MordBooks
 api-version: 1.21.1
-authors: [AlexxSGames]
+authors: [AlexxSGames, BrianFromIT]
 description: A book editing plugin for Mordonia.
 commands:
   mb:
